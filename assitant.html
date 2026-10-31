@@ -5,6 +5,7 @@
     <title>Assistant | AI Student Assistant</title>
     <link rel="icon" href="images/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <!-- Header: logo and navigation links -->
@@ -27,16 +28,16 @@
         <!-- Example conversation (static for now) -->
         <div class="chat-history">
           <div class="chat-row chat-row--user">
-            <div class="chat-bubble chat-bubble--user">What is machine learning?</div>
+            <div class="chat-bubble chat-bubble--user"><i class="fa fa-user chat-avatar"></i>What is machine learning?</div>
           </div>
           <div class="chat-row chat-row--ai">
-            <div class="chat-bubble chat-bubble--ai">It is a way to teach computers with examples instead of writing every rule by hand.</div>
+            <div class="chat-bubble chat-bubble--ai"><i class="fa fa-graduation-cap chat-avatar"></i>It is a way to teach computers with examples instead of writing every rule by hand.</div>
           </div>
           <div class="chat-row chat-row--user">
-            <div class="chat-bubble chat-bubble--user">Can you give me an example?</div>
+            <div class="chat-bubble chat-bubble--user"><i class="fa fa-user chat-avatar"></i>Can you give me an example?</div>
           </div>
           <div class="chat-row chat-row--ai">
-            <div class="chat-bubble chat-bubble--ai">Sure! A spam filter learns from thousands of emails which ones are spam.</div>
+            <div class="chat-bubble chat-bubble--ai"><i class="fa fa-graduation-cap chat-avatar"></i>Sure! A spam filter learns from thousands of emails which ones are spam.</div>
           </div>
         </div>
         <!-- Question form -->
@@ -51,7 +52,7 @@
           <label class="form-label" for="question">Your question</label>
           <textarea class="form-field" id="question" name="question" rows="4" cols="30" placeholder="Type your question here..."></textarea>
           <div class="form-actions">
-            <button class="button" type="submit">Send</button>
+            <button class="button" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
             <button class="button button--secondary" type="reset">Clear</button>
             <button class="button button--secondary" type="button">New chat</button>
           </div>

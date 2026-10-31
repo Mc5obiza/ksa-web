@@ -12,6 +12,7 @@ html{
     --space-l: 32px;
     --radius: 8px;
     font-size:16px;
+    --color-primary-dark: #1e40af;
 }
 body {
     margin:0;
@@ -56,6 +57,18 @@ a {
 .navbar{
     padding: var(--space-m);
     border-bottom: 3px solid var(--color-border);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.brand{
+    display:flex;
+    align-items: center;
+}
+.nav-links{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .brand-logo{
     margin-right: var(--space-s);   
@@ -80,6 +93,11 @@ a {
 }
 .section{
     padding : var(--space-l) var(--space-m);
+}
+.feature-list{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
 }
 .feature-card{
     width: 250px;
@@ -121,3 +139,73 @@ td{
     font-family: var(--font-main);
     font-size: 1rem;
 }
+.chate-page{
+    display: flex;
+    flex-direction: column;
+    padding:var(--space-s)
+}
+.chat-row{
+    display:flex;
+    align-items: flex-end;
+    margin-bottom: var(--space-m);
+}
+.chat-row--user{
+    justify-content: flex-end;
+}
+.chat-row--ai{
+    justify-content: flex-start;
+}
+.chat-bubble{
+    padding: var(--space-s) var(--space-m);
+    border-radius: var(--radius);
+}
+.chat-bubble--user{
+    margin-left:var(--space-l);
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+}
+.chat-bubble--ai{
+    margin-right: var(--space-l);
+    background-color: var(--color-surface);
+}
+.chat-tips{
+    margin-top: var(--space-l);
+    padding:var(--space-m);
+    border-radius: var(--radius);
+    background-color: var(--color-surface);
+}
+.feature-icon{
+    font-size: 2rem;
+    color: var(--color-on-primary)
+}
+.chat-avatar{
+    margin : 0 var(--space-s);
+    font-size: 1.5rem;
+    color: var(--color-muted)
+}
+.button:hover{
+    background-color: var(--color-primary-dark);
+    color: var(--color-on-primary);
+    border: 2px solid var(--color-primary-dark);
+}
+@media screen and (min-width:750px){
+    .navbar{
+        flex-direction:row;
+        justify-content: space-between;
+    }
+    .chat-page {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .chat {
+    width: 70%;
+  }
+
+  .chat-tips {
+    width: 30%;
+    margin-top: 0;
+    margin-left: var(--space-l);
+  }
+}
+
