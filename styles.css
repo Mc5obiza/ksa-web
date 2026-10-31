@@ -213,6 +213,11 @@ a:active{
 .nav-link:active {
   color: var(--color-primary-dark);
 }
+.nav-link:hover {
+  color: var(--color-primary-dark);
+  background-color: var(--color-surface);
+  border-radius: var(--radius);
+}
 @media screen and (min-width:750px){
     .navbar{
         flex-direction:row;
